@@ -1,0 +1,37 @@
+class Solution {
+//IMPORTANT: SHORTCUT TO FIND NUMBER OF DIGITS : (int)Math.log10(num)+1;
+    public int findNumbers(int[] nums) {
+     int count=0;
+     for(int i=0;i<nums.length;i++){
+        if(even(nums[i])){
+            count++;
+        }
+     }
+     return count;
+    }
+    boolean even(int i){
+        int numofdigits=digits(i);
+        if(numofdigits % 2 == 0){
+            return true;
+        }
+        return false;
+    }
+
+    int digits(int i){
+        if(i<0){
+            i=i * -1;
+        }
+
+        if(i==0){
+            return 1;
+        }
+
+        int count=0;
+        while(i>0){
+            count++;
+            i=i/10;
+        }
+        return count;
+
+    }
+}

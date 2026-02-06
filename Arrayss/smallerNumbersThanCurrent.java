@@ -97,8 +97,12 @@ public int[] check(int[] nums) {
 
         return result;
     }
-
+Fast → O(n + 100) ≈ O(n)
+No sorting needed
+Very common interview pattern
+Uses counting + prefix sum
     
 }*/
+
 
 

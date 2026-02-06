@@ -70,8 +70,8 @@ public int[] check(int[] nums) {
 }
  */
 
-    // ---------- Approach 2: Counting / Frequency Array (O(n + k)) ----------
-    /*
+    // ----------&&&&&&&&&&&&&&&&&&& Approach 2: Counting / Frequency Array (O(n + k))&&&&&&&&&&&&&&&&& ----------
+    /* counting sort algo/ one of many imp pattern to watch out for, when you need to count number of smaller elements or count in general, then think of counting  sort algo 
     public int[] check(int[] nums) {
         int[] freq = new int[101];  // since 0 <= nums[i] <= 100
 
@@ -97,5 +97,8 @@ public int[] check(int[] nums) {
 
         return result;
     }
-    */
+
+    
+}*/
+
 
